@@ -14,7 +14,7 @@ function genererID() {
     return 'tache' . time() . rand(1000, 9999);
 }
 
-/* SUPPRIMER */
+
 if (isset($_GET['sup'])) {
     $id = $_GET['sup'];
     $taches = array_values(array_filter($taches, fn($t) => $t['id'] !== $id));
@@ -23,7 +23,7 @@ if (isset($_GET['sup'])) {
     exit;
 }
 
-/* CHANGER ETAT */
+
 if (isset($_GET['statut'])) {
     $id = $_GET['statut'];
     foreach ($taches as &$t) {
@@ -39,7 +39,7 @@ if (isset($_GET['statut'])) {
     exit;
 }
 
-/* FILTRES */
+
 $filtre_statut = $_GET['filtre_statut'] ?? '';
 $filtre_prio   = $_GET['filtre_prio'] ?? '';
 $recherche     = trim($_GET['recherche'] ?? '');
@@ -59,7 +59,7 @@ if ($recherche) {
     );
 }
 
-/* EDIT */
+
 $edit = [];
 if (isset($_GET['edit'])) {
     foreach ($taches as $t) {
@@ -70,7 +70,7 @@ if (isset($_GET['edit'])) {
     }
 }
 
-/* AJOUT / MODIF */
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $titre = trim($_POST['titre']);
     $desc  = trim($_POST['desc']);
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-/* STATS */
+
 $total = count($taches);
 $terminees = count(array_filter($taches, fn($t) => $t['statut'] === 'finie'));
 $pourcent = $total ? round(($terminees / $total) * 100) : 0;
@@ -190,3 +190,4 @@ $enretard = !empty($t['date']) && $t['statut'] !== 'finie' && strtotime($t['date
 </div>
 </body>
 </html>
+
