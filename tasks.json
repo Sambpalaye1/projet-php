@@ -1,0 +1,29 @@
+[
+    {
+        "id": "tache_1770395405_6969",
+        "titre": "revision",
+        "desc": "html",
+        "prio": "basse",
+        "statut": "faire",
+        "date_creation": "2026-02-06 17:30:05",
+        "date": "2026-02-06"
+    },
+    {
+        "id": "tache_1770395609_9408",
+        "titre": "devoir",
+        "desc": "java",
+        "prio": "moyenne",
+        "statut": "faire",
+        "date_creation": "2026-02-06 17:33:29",
+        "date": "2026-02-07"
+    },
+    {
+        "id": "tache17703963173889",
+        "titre": "devoir",
+        "desc": "reseau",
+        "prio": "basse",
+        "statut": "cours",
+        "date_creation": "2026-02-06 17:45:17",
+        "date": "2026-02-07"
+    }
+]

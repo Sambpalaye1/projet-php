@@ -1,0 +1,89 @@
+.titre {
+  text-align: center;
+  border: 2px solid #0d6efd;
+  border-radius: 10px;
+  padding: 12px;
+  color: #0d6efd;
+  background: #f8f9ff;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.entete {
+  background: #0d6efd;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.retard {
+  background: #fff5f5 !important;
+  border-left: 4px solid #dc3545 !important;
+}
+
+.basse,
+.moyenne,
+.haute,
+.etat {
+  padding: 3px 6px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.basse {
+  background: #d6e9c6;
+  color: #2d6b0b;
+}
+
+.moyenne {
+  background: #ffeaa7;
+  color: #8a6d02;
+}
+
+.haute {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.faire {
+  background: #e7f1ff;
+  color: #0d6efd;
+}
+
+.cours {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.finie {
+  background: #d4edda;
+  color: #155724;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+
+.box {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.nombre {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0d6efd;
+  margin: 10px 0 0 0;
+}
+
+.boxretard {
+  background: #fff5f5;
+  border-color: #dc3545;
+}
+
+.boxretard .nombre {
+  color: #dc3545;
+}
