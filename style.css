@@ -17,8 +17,8 @@
 }
 
 .retard {
-  background: #fff5f5 !important;
-  border-left: 4px solid #dc3545 !important;
+  background: #fff5f5; 
+  border-left: 4px solid #dc3545;
 }
 
 .basse,
@@ -87,3 +87,4 @@
 .boxretard .nombre {
   color: #dc3545;
 }
+
